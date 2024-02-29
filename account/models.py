@@ -30,6 +30,7 @@ class User(PermissionsMixin,AbstractBaseUser):
     name = models.CharField(max_length=255)
     qr_code = models.ImageField(blank=True, upload_to='qr_code/')
     random_number = models.CharField(max_length=10, default='',blank=True,)
+    is_verified = models.BooleanField(default=False)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 

@@ -187,5 +187,21 @@ SIMPLE_JWT = {
     "SLIDING_TOKEN_REFRESH_SERIALIZER": "rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
 }
 
+##Email 
+
+# Gmail SMTP settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+# Gmail account credentials
+EMAIL_HOST_USER = 'waleramson123@gmail.com'
+EMAIL_HOST_PASSWORD = 'kvvsshzllevomxwz'
+#kvvs shzl levo mxwz
+
+# Default sender for emails sent by your application
+DEFAULT_FROM_EMAIL = 'waleramson123@gmail.com'
+SERVER_EMAIL = 'waleramson123@gmail.com'  # Email address to use as the sender for error messages sent to the site administrators
+
 
           
